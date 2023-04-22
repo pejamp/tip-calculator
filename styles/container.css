@@ -1,0 +1,8 @@
+.container {
+  background-color: var(--neutral-white);
+  width: 100%;
+  border-radius: 22px;
+  padding: 32px;
+  display: grid;
+  gap: 32px;
+}

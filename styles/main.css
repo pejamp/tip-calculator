@@ -1,0 +1,9 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 48px;
+  background: var(--neutral-light-grayish-cyan);
+}

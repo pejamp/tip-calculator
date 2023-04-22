@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Tip calculator app</title>
+
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/style-guide.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/logo.css">
+  <link rel="stylesheet" href="/styles/container.css">
+</head>
+<body>
+  <main class="main">
+    <img class="logo" src="/images/logo.svg" alt="Splitter logo">
+    <div class="container">
+      <form>
+        <label for="bill">
+          Bill
+          <input type="number" name="bill" id="bill">
+        </label>
+        <ul>
+          <p>Select Tip %</p>
+          <li>
+            <label>
+              5%
+              <input type="radio" name="tip" value="5">
+            </label>
+          </li>
+          <li>
+            <label>
+              10%
+              <input type="radio" name="tip" value="10">
+            </label>
+          </li>
+          <li>
+            <label>
+              15%
+              <input type="radio" name="tip" value="15">
+            </label>
+          </li>
+          <li>
+            <label>
+              25%
+              <input type="radio" name="tip" value="25">
+            </label>
+          </li>
+          <li>
+            <label>
+              50%
+              <input type="radio" name="tip" value="50">
+            </label>
+          </li>
+          <li>
+            <label>
+              Custom
+              <input type="radio" name="tip" value="custom">
+            </label>
+          </li>
+        </ul>
+        <label for="people">
+          Number of People
+          <input type="number" name="people" id="people">
+        </label>
+      </form>
+      <div class="result">
+        <div class="result__content">
+          <p class="result__text">
+            Tip Amount
+            <span>/ person</span>
+          </p>
+          <span class="result__amount">$0.00</span>
+        </div>
+        <div class="result__content">
+          <p class="result__text">
+            Total
+            <span>/ person</span>
+          </p>
+          <span class="result__amount">$0.00</span>
+        </div>
+        <button class="reset-btn">Reset</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#" target="_blank">Pedro Rodrigues</a>.
+  </footer>
+</body>
+</html>
