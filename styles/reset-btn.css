@@ -1,0 +1,12 @@
+.reset-btn {
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-strong-cyan);
+  color: var(--neutral-very-dark-cyan);
+  border-radius: 4px;
+  padding: 14px;
+  font-size: 16px;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  margin-top: 36px;
+}

@@ -1,0 +1,10 @@
+.result__text {
+  display: flex;
+  flex-direction: column;
+  color: var(--neutral-white);
+}
+
+.result__text span {
+  font-size: 12px;
+  color: var(--neutral-grayish-cyan);
+}

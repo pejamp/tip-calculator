@@ -1,0 +1,38 @@
+.form__input {
+  background-color: var(--neutral-very-light-grayish-cyan);
+  padding: 6px 18px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.form__input input {
+  width: 100%;
+  font-size: var(--font-size-input);
+  color: var(--neutral-very-dark-cyan);
+  font-family: var(--font-family);
+  text-align: end;
+  border: none;
+  background: none;
+}
+
+.form__input input::placeholder {
+  color: var(--neutral-grayish-cyan);
+}
+
+.form__input::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form__input--dollar::before {
+  background-image: url("/images/icon-dollar.svg");
+}
+.form__input--person::before {
+  background-image: url("/images/icon-person.svg");
+}

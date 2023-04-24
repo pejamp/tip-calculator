@@ -17,58 +17,74 @@
   <link rel="stylesheet" href="/styles/main.css">
   <link rel="stylesheet" href="/styles/logo.css">
   <link rel="stylesheet" href="/styles/container.css">
+  <link rel="stylesheet" href="/styles/result/result.css">
+  <link rel="stylesheet" href="/styles/result/result-content.css">
+  <link rel="stylesheet" href="/styles/result/result-amount.css">
+  <link rel="stylesheet" href="/styles/result/result-text.css">
+  <link rel="stylesheet" href="/styles/reset-btn.css">
+  <link rel="stylesheet" href="/styles/form/form.css">
+  <link rel="stylesheet" href="/styles/form/form-label.css">
+  <link rel="stylesheet" href="/styles/form/form-input.css">
+  <link rel="stylesheet" href="/styles/form/form-select.css">
+  <link rel="stylesheet" href="/styles/form/form-option.css">
 </head>
 <body>
   <main class="main">
     <img class="logo" src="/images/logo.svg" alt="Splitter logo">
     <div class="container">
-      <form>
-        <label for="bill">
+      <form class="form">
+        <label class="form__label" for="bill">
           Bill
-          <input type="number" name="bill" id="bill">
+          <div class="form__input form__input--dollar">
+            <input type="number" name="bill" id="bill" placeholder="0">
+          </div>
         </label>
-        <ul>
+        <div class="form__select">
           <p>Select Tip %</p>
-          <li>
-            <label>
-              5%
-              <input type="radio" name="tip" value="5">
-            </label>
-          </li>
-          <li>
-            <label>
-              10%
-              <input type="radio" name="tip" value="10">
-            </label>
-          </li>
-          <li>
-            <label>
-              15%
-              <input type="radio" name="tip" value="15">
-            </label>
-          </li>
-          <li>
-            <label>
-              25%
-              <input type="radio" name="tip" value="25">
-            </label>
-          </li>
-          <li>
-            <label>
-              50%
-              <input type="radio" name="tip" value="50">
-            </label>
-          </li>
-          <li>
-            <label>
-              Custom
-              <input type="radio" name="tip" value="custom">
-            </label>
-          </li>
-        </ul>
-        <label for="people">
+          <ul>
+            <li class="form__option">
+              <label>
+                5%
+                <input type="radio" name="tip" value="5">
+              </label>
+            </li>
+            <li class="form__option">
+              <label>
+                10%
+                <input type="radio" name="tip" value="10">
+              </label>
+            </li>
+            <li class="form__option">
+              <label>
+                15%
+                <input type="radio" name="tip" value="15">
+              </label>
+            </li>
+            <li class="form__option">
+              <label>
+                25%
+                <input type="radio" name="tip" value="25">
+              </label>
+            </li>
+            <li class="form__option">
+              <label>
+                50%
+                <input type="radio" name="tip" value="50">
+              </label>
+            </li>
+            <li class="form__option form__option--custom">
+              <label>
+                Custom
+                <input type="radio" name="tip" value="custom">
+              </label>
+            </li>
+          </ul>
+        </div>
+        <label class="form__label" for="people">
           Number of People
-          <input type="number" name="people" id="people">
+          <div class="form__input form__input--person">
+            <input type="number" name="people" id="people" placeholder="0">
+          </div>
         </label>
       </form>
       <div class="result">

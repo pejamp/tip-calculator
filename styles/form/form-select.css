@@ -1,0 +1,10 @@
+.form__select p {
+  margin-bottom: 16px;
+  color: var(--neutral-dark-grayish-cyan);
+}
+
+.form__select ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}

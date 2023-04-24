@@ -1,0 +1,5 @@
+.result {
+  padding: 24px;
+  background-color: var(--neutral-very-dark-cyan);
+  border-radius: 12px;
+}

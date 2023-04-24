@@ -1,0 +1,31 @@
+.form__option {
+  background-color: var(--neutral-very-dark-cyan);
+  padding: 6px 18px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.form__option label {
+  font-size: var(--font-size-input);
+  color: var(--neutral-white);
+  display: block;
+  text-align: center;
+}
+
+.form__option input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.form__option--custom {
+  background-color: var(--neutral-very-light-grayish-cyan);
+}
+
+.form__option--custom label {
+  color: var(--neutral-dark-grayish-cyan);
+  text-align: end;
+}

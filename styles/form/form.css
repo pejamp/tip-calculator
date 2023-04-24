@@ -1,0 +1,7 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  padding: 0 8px;
+  overflow: hidden;
+}
