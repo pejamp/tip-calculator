@@ -1,0 +1,8 @@
+.footer__attribution {
+  padding: 16px;
+  text-align: center;
+}
+
+.footer__attribution a {
+  color: var(--primary-strong-cyan);
+}

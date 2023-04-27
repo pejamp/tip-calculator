@@ -2,7 +2,13 @@
   background-color: var(--neutral-very-light-grayish-cyan);
   padding: 6px 18px;
   border-radius: 4px;
+  border: 2px solid var(--neutral-very-light-grayish-cyan);
   position: relative;
+  transition: all 200ms ease-in;
+}
+
+.form__input:hover {
+  border-color: var(--primary-strong-cyan);
 }
 
 .form__input input {

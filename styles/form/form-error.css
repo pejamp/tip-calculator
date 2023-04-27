@@ -1,0 +1,15 @@
+.form__error {
+  position: relative;
+}
+
+.form__error .form__input {
+  border-color: var(--neutral-orange-red);
+}
+
+.form__error span {
+  color: var(--neutral-orange-red);
+  text-align: end;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

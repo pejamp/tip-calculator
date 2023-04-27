@@ -4,9 +4,25 @@
   background-color: var(--primary-strong-cyan);
   color: var(--neutral-very-dark-cyan);
   border-radius: 4px;
-  padding: 14px;
+  padding: 12px;
   font-size: 16px;
   font-family: var(--font-family);
   text-transform: uppercase;
   margin-top: 36px;
+  transition: all 200ms ease-in;
+}
+
+.reset-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.reset-btn:hover {
+  background-color: hsl(173, 61%, 77%);
+}
+
+@media screen and (min-width: 1200px) {
+  .reset-btn {
+    margin: 0;
+  }
 }

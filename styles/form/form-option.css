@@ -3,6 +3,23 @@
   padding: 6px 18px;
   border-radius: 4px;
   position: relative;
+  transition: all 200ms ease-in;
+}
+
+.form__option:has(input:checked) {
+  background-color: var(--primary-strong-cyan);
+}
+
+.form__option:has(input:checked) label {
+  color: var(--neutral-very-dark-cyan);
+}
+
+.form__option:hover {
+  background-color: hsl(173, 61%, 77%);
+}
+
+.form__option:hover label {
+  color: var(--neutral-very-dark-cyan);
 }
 
 .form__option label {
@@ -19,6 +36,7 @@
   height: 100%;
   width: 100%;
   cursor: pointer;
+  appearance: none;
 }
 
 .form__option--custom {

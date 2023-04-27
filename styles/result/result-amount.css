@@ -2,3 +2,9 @@
   font-size: 32px;
   color: var(--primary-strong-cyan);
 }
+
+@media screen and (min-width: 1200px) {
+  .result__amount {
+    font-size: 44px;
+  }
+}

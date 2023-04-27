@@ -6,3 +6,11 @@
   padding-top: 48px;
   background: var(--neutral-light-grayish-cyan);
 }
+
+@media screen and (min-width: 1200px) {
+  .main {
+    height: 100vh;
+    justify-content: center;
+    gap: 88px;
+  }
+}

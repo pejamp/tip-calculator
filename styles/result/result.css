@@ -2,4 +2,14 @@
   padding: 24px;
   background-color: var(--neutral-very-dark-cyan);
   border-radius: 12px;
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .result {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
