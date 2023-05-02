@@ -1,119 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="/styles/reset.css">
-  <link rel="stylesheet" href="/styles/style-guide.css">
-  <link rel="stylesheet" href="/styles/main.css">
-  <link rel="stylesheet" href="/styles/logo.css">
-  <link rel="stylesheet" href="/styles/container.css">
-  <link rel="stylesheet" href="/styles/result/result.css">
-  <link rel="stylesheet" href="/styles/result/result-content.css">
-  <link rel="stylesheet" href="/styles/result/result-amount.css">
-  <link rel="stylesheet" href="/styles/result/result-text.css">
-  <link rel="stylesheet" href="/styles/reset-btn.css">
-  <link rel="stylesheet" href="/styles/form/form.css">
-  <link rel="stylesheet" href="/styles/form/form-label.css">
-  <link rel="stylesheet" href="/styles/form/form-input.css">
-  <link rel="stylesheet" href="/styles/form/form-select.css">
-  <link rel="stylesheet" href="/styles/form/form-option.css">
-  <link rel="stylesheet" href="/styles/form/form-error.css">
-  <link rel="stylesheet" href="/styles/footer.css">
-</head>
-<body>
-  <main class="main">
-    <img class="logo" src="/images/logo.svg" alt="Splitter logo">
-    <div class="container">
-      <form class="form">
-        <label class="form__label" for="bill">
-          Bill
-          <div class="form__input form__input--dollar">
-            <input type="number" name="bill" id="bill" placeholder="0">
+    <title>Tip calculator app</title>
+
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/style-guide.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/logo.css" />
+    <link rel="stylesheet" href="/styles/container.css" />
+    <link rel="stylesheet" href="/styles/result/result.css" />
+    <link rel="stylesheet" href="/styles/result/result-content.css" />
+    <link rel="stylesheet" href="/styles/result/result-amount.css" />
+    <link rel="stylesheet" href="/styles/result/result-text.css" />
+    <link rel="stylesheet" href="/styles/reset-btn.css" />
+    <link rel="stylesheet" href="/styles/form/form.css" />
+    <link rel="stylesheet" href="/styles/form/form-label.css" />
+    <link rel="stylesheet" href="/styles/form/form-input.css" />
+    <link rel="stylesheet" href="/styles/form/form-select.css" />
+    <link rel="stylesheet" href="/styles/form/form-option.css" />
+    <link rel="stylesheet" href="/styles/form/form-error.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+  </head>
+
+  <body>
+    <main class="main">
+      <img class="logo" src="/images/logo.svg" alt="Splitter logo" />
+      <div class="container">
+        <form class="form" id="form">
+          <label class="form__label" for="bill">
+            Bill
+            <div class="form__input form__input--dollar">
+              <input type="number" name="bill" id="bill" placeholder="0" min="0" />
+            </div>
+          </label>
+          <div class="form__select">
+            <p>Select Tip %</p>
+            <ul>
+              <li class="form__option">
+                <label>5%</label>
+                <input type="radio" name="tip" value="5" />
+              </li>
+              <li class="form__option">
+                <label>10%</label>
+                <input type="radio" name="tip" value="10" />
+              </li>
+              <li class="form__option">
+                <label>15%</label>
+                <input type="radio" name="tip" value="15" />
+              </li>
+              <li class="form__option">
+                <label>25%</label>
+                <input type="radio" name="tip" value="25" />
+              </li>
+              <li class="form__option">
+                <label>50%</label>
+                <input type="radio" name="tip" value="50" />
+              </li>
+              <li class="form__option form__option--custom">
+                <label>Custom</label>
+                <input type="radio" name="tip" value="custom" />
+                <input type="number" id="customTip" name="customTip" value="" placeholder="0" min="0" max="100" class="form__input-custom hidden" />
+              </li>
+            </ul>
           </div>
-        </label>
-        <div class="form__select">
-          <p>Select Tip %</p>
-          <ul>
-            <li class="form__option">
-              <label>
-                5%
-                <input type="radio" name="tip" value="5">
-              </label>
-            </li>
-            <li class="form__option">
-              <label>
-                10%
-                <input type="radio" name="tip" value="10">
-              </label>
-            </li>
-            <li class="form__option">
-              <label>
-                15%
-                <input type="radio" name="tip" value="15">
-              </label>
-            </li>
-            <li class="form__option">
-              <label>
-                25%
-                <input type="radio" name="tip" value="25">
-              </label>
-            </li>
-            <li class="form__option">
-              <label>
-                50%
-                <input type="radio" name="tip" value="50">
-              </label>
-            </li>
-            <li class="form__option form__option--custom">
-              <label>
-                Custom
-                <input type="radio" name="tip" value="custom">
-              </label>
-            </li>
-          </ul>
+          <label class="form__label" for="people">
+            Number of People
+            <div class="form__input form__input--person">
+              <input type="number" name="people" id="people" placeholder="0" min="0" />
+            </div>
+          </label>
+          <button type="submit" style="display: none"></button>
+        </form>
+        <div class="result">
+          <div>
+            <div class="result__content">
+              <p class="result__text">
+                Tip Amount
+                <span>/ person</span>
+              </p>
+              <span class="result__amount">$0.00</span>
+            </div>
+            <div class="result__content">
+              <p class="result__text">
+                Total
+                <span>/ person</span>
+              </p>
+              <span class="result__amount">$0.00</span>
+            </div>
+          </div>
+          <button class="reset-btn" type="button">Reset</button>
         </div>
-        <label class="form__label" for="people">
-          Number of People
-          <div class="form__input form__input--person">
-            <input type="number" name="people" id="people" placeholder="0">
-          </div>
-        </label>
-      </form>
-      <div class="result">
-        <div>
-          <div class="result__content">
-            <p class="result__text">
-              Tip Amount
-              <span>/ person</span>
-            </p>
-            <span class="result__amount">$0.00</span>
-          </div>
-          <div class="result__content">
-            <p class="result__text">
-              Total
-              <span>/ person</span>
-            </p>
-            <span class="result__amount">$0.00</span>
-          </div>
-        </div>
-        <button class="reset-btn" type="button">Reset</button>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer class="footer__attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/pejamp/tip-calculator" target="_blank">Pedro Rodrigues</a>.
-  </footer>
-</body>
+    <footer class="footer__attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/pejamp/tip-calculator" target="_blank"
+        >Pedro Rodrigues</a
+      >.
+    </footer>
+
+    <script src="scripts/script.js" type="module"></script>
+  </body>
 </html>

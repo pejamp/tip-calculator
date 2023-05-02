@@ -19,6 +19,14 @@
   text-align: end;
   border: none;
   background: none;
+  appearance: none;
+  outline: none;
+  caret-color: var(--primary-strong-cyan);
+}
+
+.form__input input::-webkit-outer-spin-button,
+.form__input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .form__input input::placeholder {
@@ -41,4 +49,28 @@
 }
 .form__input--person::before {
   background-image: url("/images/icon-person.svg");
+}
+
+.form__input-custom {
+  background-color: var(--neutral-very-light-grayish-cyan);
+  padding: 8px 6px;
+  border-radius: 4px;
+  border: 2px solid var(--neutral-very-light-grayish-cyan);
+  font-size: var(--font-size-input);
+  color: var(--neutral-very-dark-cyan);
+  font-family: var(--font-family);
+  text-align: end;
+  appearance: none;
+  outline: none;
+  caret-color: var(--primary-strong-cyan);
+  transition: all 200ms ease-in;
+}
+
+.form__input-custom:focus, .form__input-custom:hover {
+  border-color: var(--primary-strong-cyan);
+}
+
+.form__input-custom::-webkit-outer-spin-button,
+.form__input-custom::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }

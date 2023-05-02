@@ -5,3 +5,10 @@
   padding: 0 8px;
   overflow: hidden;
 }
+
+@media screen and (min-width: 1200px) {
+  .form {
+    gap: 46px;
+    padding: 16px;
+  }
+}

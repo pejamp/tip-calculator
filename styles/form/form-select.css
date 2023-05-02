@@ -8,3 +8,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
+
+@media screen and (min-width: 1200px) {
+  .form__select ul {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 16px;
+    column-gap: 14px;
+  }
+}
