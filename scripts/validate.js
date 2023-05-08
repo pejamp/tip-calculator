@@ -13,7 +13,9 @@ export function validate(bill, people) {
   } else {
     billLabel.classList.remove("form__error");
     const messageError = billLabel.querySelector('span');
-    messageError.remove();
+    if (messageError) {
+      messageError.remove();
+    }
   }
 
   if (people <= 0) {
@@ -25,7 +27,10 @@ export function validate(bill, people) {
   } else {
     peopleLabel.classList.remove("form__error");
     const messageError = peopleLabel.querySelector('span');
-    messageError.remove();
+
+    if (messageError) {
+      messageError.remove();
+    }
   }
 
   return isValid;
